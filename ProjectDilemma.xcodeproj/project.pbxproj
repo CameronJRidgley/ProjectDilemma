@@ -8,18 +8,13 @@
 
 /* Begin PBXFileReference section */
 		278C15802FA02FB30018DDA7 /* ProjectDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		278C15912FA02FB30018DDA7 /* ProjectDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		278C15A12FA02FB30018DDA7 /* ProjectDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		278C15B62FA02FB30018DDA7 /* Exceptions for "ProjectDilemma Shared" folder in "ProjectDilemma iOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Actions.sks,
 				Assets.xcassets,
-				GameScene.sks,
-				GameScene.swift,
 			);
 			target = 278C157F2FA02FB30018DDA7 /* ProjectDilemma iOS */;
 		};
@@ -28,34 +23,14 @@
 			membershipExceptions = (
 				Info.plist,
 			);
+			platformFiltersByRelativePath = {
+				AppDelegate.swift = (ios, );
+				Core/GameManager.swift = (ios, );
+				Core/GameViewController.swift = (ios, );
+				Core/PlayerStats.swift = (ios, );
+				SceneDelegate.swift = (ios, );
+			};
 			target = 278C157F2FA02FB30018DDA7 /* ProjectDilemma iOS */;
-		};
-		278C15BB2FA02FB30018DDA7 /* Exceptions for "ProjectDilemma Shared" folder in "ProjectDilemma tvOS" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Actions.sks,
-				Assets.xcassets,
-				GameScene.sks,
-				GameScene.swift,
-			);
-			target = 278C15902FA02FB30018DDA7 /* ProjectDilemma tvOS */;
-		};
-		278C15BF2FA02FB30018DDA7 /* Exceptions for "ProjectDilemma tvOS" folder in "ProjectDilemma tvOS" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 278C15902FA02FB30018DDA7 /* ProjectDilemma tvOS */;
-		};
-		278C15C02FA02FB30018DDA7 /* Exceptions for "ProjectDilemma Shared" folder in "ProjectDilemma macOS" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Actions.sks,
-				Assets.xcassets,
-				GameScene.sks,
-				GameScene.swift,
-			);
-			target = 278C15A02FA02FB30018DDA7 /* ProjectDilemma macOS */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -64,8 +39,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				278C15B62FA02FB30018DDA7 /* Exceptions for "ProjectDilemma Shared" folder in "ProjectDilemma iOS" target */,
-				278C15BB2FA02FB30018DDA7 /* Exceptions for "ProjectDilemma Shared" folder in "ProjectDilemma tvOS" target */,
-				278C15C02FA02FB30018DDA7 /* Exceptions for "ProjectDilemma Shared" folder in "ProjectDilemma macOS" target */,
 			);
 			path = "ProjectDilemma Shared";
 			sourceTree = "<group>";
@@ -78,37 +51,10 @@
 			path = "ProjectDilemma iOS";
 			sourceTree = "<group>";
 		};
-		278C15922FA02FB30018DDA7 /* ProjectDilemma tvOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				278C15BF2FA02FB30018DDA7 /* Exceptions for "ProjectDilemma tvOS" folder in "ProjectDilemma tvOS" target */,
-			);
-			path = "ProjectDilemma tvOS";
-			sourceTree = "<group>";
-		};
-		278C15A22FA02FB30018DDA7 /* ProjectDilemma macOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "ProjectDilemma macOS";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		278C157D2FA02FB30018DDA7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		278C158E2FA02FB30018DDA7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		278C159E2FA02FB30018DDA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,8 +69,6 @@
 			children = (
 				278C15772FA02FAE0018DDA7 /* ProjectDilemma Shared */,
 				278C15822FA02FB30018DDA7 /* ProjectDilemma iOS */,
-				278C15922FA02FB30018DDA7 /* ProjectDilemma tvOS */,
-				278C15A22FA02FB30018DDA7 /* ProjectDilemma macOS */,
 				278C15812FA02FB30018DDA7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				278C15802FA02FB30018DDA7 /* ProjectDilemma.app */,
-				278C15912FA02FB30018DDA7 /* ProjectDilemma.app */,
-				278C15A12FA02FB30018DDA7 /* ProjectDilemma.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,50 +106,6 @@
 			productReference = 278C15802FA02FB30018DDA7 /* ProjectDilemma.app */;
 			productType = "com.apple.product-type.application";
 		};
-		278C15902FA02FB30018DDA7 /* ProjectDilemma tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 278C15BC2FA02FB30018DDA7 /* Build configuration list for PBXNativeTarget "ProjectDilemma tvOS" */;
-			buildPhases = (
-				278C158D2FA02FB30018DDA7 /* Sources */,
-				278C158E2FA02FB30018DDA7 /* Frameworks */,
-				278C158F2FA02FB30018DDA7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				278C15922FA02FB30018DDA7 /* ProjectDilemma tvOS */,
-			);
-			name = "ProjectDilemma tvOS";
-			packageProductDependencies = (
-			);
-			productName = "ProjectDilemma tvOS";
-			productReference = 278C15912FA02FB30018DDA7 /* ProjectDilemma.app */;
-			productType = "com.apple.product-type.application";
-		};
-		278C15A02FA02FB30018DDA7 /* ProjectDilemma macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 278C15C12FA02FB30018DDA7 /* Build configuration list for PBXNativeTarget "ProjectDilemma macOS" */;
-			buildPhases = (
-				278C159D2FA02FB30018DDA7 /* Sources */,
-				278C159E2FA02FB30018DDA7 /* Frameworks */,
-				278C159F2FA02FB30018DDA7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				278C15A22FA02FB30018DDA7 /* ProjectDilemma macOS */,
-			);
-			name = "ProjectDilemma macOS";
-			packageProductDependencies = (
-			);
-			productName = "ProjectDilemma macOS";
-			productReference = 278C15A12FA02FB30018DDA7 /* ProjectDilemma.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,12 +117,6 @@
 				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					278C157F2FA02FB30018DDA7 = {
-						CreatedOnToolsVersion = 26.4;
-					};
-					278C15902FA02FB30018DDA7 = {
-						CreatedOnToolsVersion = 26.4;
-					};
-					278C15A02FA02FB30018DDA7 = {
 						CreatedOnToolsVersion = 26.4;
 					};
 				};
@@ -244,8 +136,6 @@
 			projectRoot = "";
 			targets = (
 				278C157F2FA02FB30018DDA7 /* ProjectDilemma iOS */,
-				278C15902FA02FB30018DDA7 /* ProjectDilemma tvOS */,
-				278C15A02FA02FB30018DDA7 /* ProjectDilemma macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -258,38 +148,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		278C158F2FA02FB30018DDA7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		278C159F2FA02FB30018DDA7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		278C157C2FA02FB30018DDA7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		278C158D2FA02FB30018DDA7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		278C159D2FA02FB30018DDA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,7 +190,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -339,6 +201,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P555436UR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProjectDilemma iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -361,137 +224,8 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		278C15BD2FA02FB30018DDA7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ProjectDilemma tvOS/Info.plist";
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "CSC-291.ProjectDilemma";
-				PRODUCT_NAME = ProjectDilemma;
-				SDKROOT = appletvos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 26.4;
-			};
-			name = Debug;
-		};
-		278C15BE2FA02FB30018DDA7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ProjectDilemma tvOS/Info.plist";
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "CSC-291.ProjectDilemma";
-				PRODUCT_NAME = ProjectDilemma;
-				SDKROOT = appletvos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 26.4;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		278C15C22FA02FB30018DDA7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "CSC-291.ProjectDilemma";
-				PRODUCT_NAME = ProjectDilemma;
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = macosx;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		278C15C32FA02FB30018DDA7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "CSC-291.ProjectDilemma";
-				PRODUCT_NAME = ProjectDilemma;
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = macosx;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -626,24 +360,6 @@
 			buildConfigurations = (
 				278C15B82FA02FB30018DDA7 /* Debug */,
 				278C15B92FA02FB30018DDA7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		278C15BC2FA02FB30018DDA7 /* Build configuration list for PBXNativeTarget "ProjectDilemma tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				278C15BD2FA02FB30018DDA7 /* Debug */,
-				278C15BE2FA02FB30018DDA7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		278C15C12FA02FB30018DDA7 /* Build configuration list for PBXNativeTarget "ProjectDilemma macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				278C15C22FA02FB30018DDA7 /* Debug */,
-				278C15C32FA02FB30018DDA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
